@@ -1,0 +1,35 @@
+name: Idea
+description: Suggest a new feature or a change to CodePark.
+title: "Idea: "
+labels: [idea]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for the idea. Please search the open issues first, so we do not get the same idea twice.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does it solve?
+      description: What is hard or missing today?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What should CodePark do?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Frontend questions
+        - Backend questions
+        - Coding problems
+        - Lessons and walkthroughs
+        - Daily review
+        - Account and sync
+        - Something else

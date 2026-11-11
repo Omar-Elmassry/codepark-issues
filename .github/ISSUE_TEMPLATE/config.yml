@@ -1,1 +1,8 @@
-blank_issues_enabled: true
+blank_issues_enabled: false
+contact_links:
+  - name: Wrong answer or unclear question
+    url: https://codepark.app/questions
+    about: Open the question in CodePark and use its Report button. It sends the question's id with your note.
+  - name: Private message
+    url: https://codepark.app/contact
+    about: For anything you do not want to post in public, use the contact form.

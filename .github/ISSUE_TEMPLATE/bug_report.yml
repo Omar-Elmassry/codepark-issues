@@ -1,0 +1,63 @@
+name: Bug report
+description: Something in CodePark is broken or does not work as it should.
+title: "Bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug.
+        Is a question's answer wrong, or is a test wrong? Use the **Report** button on that question or problem in the app instead. It is faster.
+        This page is public. Please do not add passwords, emails or other private data.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Tell us what you saw. Add a screenshot if you can.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we see the bug ourselves?
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. See ...
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The page where it happened. The app fills this in for you.
+      placeholder: /practice
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options:
+        - Computer
+        - Phone
+        - Tablet
+  - type: checkboxes
+    id: signed-in
+    attributes:
+      label: Account
+      options:
+        - label: I was signed in
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: The app fills this in for you.
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      description: The app fills this in for you. Or write it yourself, for example "Chrome 140 on Windows".
